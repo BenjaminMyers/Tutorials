@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Black</string>
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9mM-yG-4ks">
+                                <rect key="frame" x="27" y="293.5" width="320" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bOO-Wy-wDQ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="enter:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="oC3-kn-Mi8"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehW-xb-MYV">
+                                <rect key="frame" x="16" y="20" width="350" height="265.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Simulator Screen Shot - iPhone 6 - 2017-11-10 at 13.48.20" translatesAutoresizingMaskIntoConstraints="NO" id="uKS-jo-okG">
+                                <rect key="frame" x="16" y="343.5" width="343" height="265.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2Y-9D-TyL">
+                                <rect key="frame" x="201.5" y="617" width="157.5" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RbQ-en-aXk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Hide"/>
+                                <connections>
+                                    <action selector="hide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jOw-EI-lEG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrZ-3G-M9C">
+                                <rect key="frame" x="16" y="617" width="157.5" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4QP-0n-p02"/>
+                                </constraints>
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="show:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QeH-c4-MP1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35035646339894488" green="1" blue="0.25792878147355069" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uKS-jo-okG" secondAttribute="trailing" constant="16" id="1LK-Wa-Hdd"/>
+                            <constraint firstItem="TrZ-3G-M9C" firstAttribute="top" secondItem="uKS-jo-okG" secondAttribute="bottom" constant="8" id="4uQ-tH-ZxA"/>
+                            <constraint firstItem="uKS-jo-okG" firstAttribute="height" secondItem="ehW-xb-MYV" secondAttribute="height" id="6iD-U5-Hcc"/>
+                            <constraint firstItem="ehW-xb-MYV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ab8-mv-3V6"/>
+                            <constraint firstItem="n2Y-9D-TyL" firstAttribute="leading" secondItem="TrZ-3G-M9C" secondAttribute="trailing" constant="28" id="BUR-aT-B9b"/>
+                            <constraint firstItem="n2Y-9D-TyL" firstAttribute="top" secondItem="uKS-jo-okG" secondAttribute="bottom" constant="8" id="DUz-uL-r0D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n2Y-9D-TyL" secondAttribute="bottom" constant="20" id="IXh-eE-gvd"/>
+                            <constraint firstItem="n2Y-9D-TyL" firstAttribute="width" secondItem="TrZ-3G-M9C" secondAttribute="width" id="JAQ-ih-62F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9mM-yG-4ks" secondAttribute="trailing" constant="28" id="Q4p-BN-cD8"/>
+                            <constraint firstItem="ehW-xb-MYV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RhU-x2-dsz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n2Y-9D-TyL" secondAttribute="trailing" constant="16" id="RuX-b0-8zk"/>
+                            <constraint firstItem="uKS-jo-okG" firstAttribute="top" secondItem="9mM-yG-4ks" secondAttribute="bottom" constant="20" id="Uhz-hY-YOE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TrZ-3G-M9C" secondAttribute="bottom" constant="20" id="Wju-OL-S68"/>
+                            <constraint firstItem="uKS-jo-okG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Y5U-Bj-7dL"/>
+                            <constraint firstItem="TrZ-3G-M9C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mmY-Fw-BB3"/>
+                            <constraint firstItem="9mM-yG-4ks" firstAttribute="top" secondItem="ehW-xb-MYV" secondAttribute="bottom" constant="8" id="qNt-94-tXD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ehW-xb-MYV" secondAttribute="trailing" constant="9" id="rTT-aQ-NaA"/>
+                            <constraint firstItem="9mM-yG-4ks" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="vWY-Fy-GOY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="uKS-jo-okG" id="l39-gz-xKX"/>
+                        <outlet property="label" destination="ehW-xb-MYV" id="I1b-Xs-0LP"/>
+                        <outlet property="textField" destination="9mM-yG-4ks" id="FRl-Ky-8Ki"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-287.19999999999999" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Simulator Screen Shot - iPhone 6 - 2017-11-10 at 13.48.20" width="750" height="1334"/>
+    </resources>
+</document>
